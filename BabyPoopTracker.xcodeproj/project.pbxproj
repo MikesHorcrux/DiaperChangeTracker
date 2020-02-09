@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A150C45623EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A150C45423EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld */; };
 		A164AC5A23EE6152005B9A33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164AC5923EE6152005B9A33 /* AppDelegate.swift */; };
 		A164AC5C23EE6152005B9A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */; };
-		A164AC5F23EE6152005B9A33 /* BabyPoopTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A164AC5D23EE6152005B9A33 /* BabyPoopTracker.xcdatamodeld */; };
 		A164AC6123EE6152005B9A33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164AC6023EE6152005B9A33 /* ContentView.swift */; };
 		A164AC6323EE6153005B9A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A164AC6223EE6153005B9A33 /* Assets.xcassets */; };
 		A164AC6623EE6153005B9A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A164AC6523EE6153005B9A33 /* Preview Assets.xcassets */; };
 		A164AC6923EE6153005B9A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A164AC6723EE6153005B9A33 /* LaunchScreen.storyboard */; };
+		A164AC7823EE70A3005B9A33 /* Diaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164AC7723EE70A3005B9A33 /* Diaper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A150C45523EFDF56005D9D12 /* BabyPoopTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabyPoopTracker.xcdatamodel; sourceTree = "<group>"; };
 		A164AC5623EE6152005B9A33 /* BabyPoopTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyPoopTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A164AC5923EE6152005B9A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A164AC5E23EE6152005B9A33 /* BabyPoopTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabyPoopTracker.xcdatamodel; sourceTree = "<group>"; };
 		A164AC6023EE6152005B9A33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A164AC6223EE6153005B9A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A164AC6523EE6153005B9A33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A164AC6823EE6153005B9A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A164AC6A23EE6153005B9A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A164AC7723EE70A3005B9A33 /* Diaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,11 @@
 				A164AC5923EE6152005B9A33 /* AppDelegate.swift */,
 				A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */,
 				A164AC6023EE6152005B9A33 /* ContentView.swift */,
+				A164AC7723EE70A3005B9A33 /* Diaper.swift */,
 				A164AC6223EE6153005B9A33 /* Assets.xcassets */,
 				A164AC6723EE6153005B9A33 /* LaunchScreen.storyboard */,
 				A164AC6A23EE6153005B9A33 /* Info.plist */,
-				A164AC5D23EE6152005B9A33 /* BabyPoopTracker.xcdatamodeld */,
+				A150C45423EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld */,
 				A164AC6423EE6153005B9A33 /* Preview Content */,
 			);
 			path = BabyPoopTracker;
@@ -149,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A150C45623EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld in Sources */,
+				A164AC7823EE70A3005B9A33 /* Diaper.swift in Sources */,
 				A164AC5A23EE6152005B9A33 /* AppDelegate.swift in Sources */,
-				A164AC5F23EE6152005B9A33 /* BabyPoopTracker.xcdatamodeld in Sources */,
 				A164AC6123EE6152005B9A33 /* ContentView.swift in Sources */,
 				A164AC5C23EE6152005B9A33 /* SceneDelegate.swift in Sources */,
 			);
@@ -348,12 +352,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A164AC5D23EE6152005B9A33 /* BabyPoopTracker.xcdatamodeld */ = {
+		A150C45423EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A164AC5E23EE6152005B9A33 /* BabyPoopTracker.xcdatamodel */,
+				A150C45523EFDF56005D9D12 /* BabyPoopTracker.xcdatamodel */,
 			);
-			currentVersion = A164AC5E23EE6152005B9A33 /* BabyPoopTracker.xcdatamodel */;
+			currentVersion = A150C45523EFDF56005D9D12 /* BabyPoopTracker.xcdatamodel */;
 			path = BabyPoopTracker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
