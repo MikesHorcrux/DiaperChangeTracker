@@ -9,33 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @Environment(\.managedObjectContext)
-    var managedObjectContext
-    @FetchRequest(fetchRequest: Diaper.getAllDiaper())
-    var diaper:FetchedResults<Diaper>
-    
     var body: some View {
-        
-        VStack{
-            DiaperEntry()
-            
-            Section(header: Text("To Do(s)")){
-                
-                ForEach(self.diaper){
-                    diaper in DiaperView(dirty: diaper.dirtyDiaper, wet: diaper.wetDiaper, date: diaper.date)
-                }.onDelete {indexSet in
-                    let deleteItem = self.diaper[indexSet.first!]
-                    self.managedObjectContext.delete(deleteItem)
-                    
-                    do{
-                        try self.managedObjectContext.save()
-                    }
-                    catch{
-                        print(error)
-                    }
-                }
-            }
+        TabView{
+            Text("DashBoard").tabItem
+                { Text("Dash Board") }.tag(1)
+            DiaperEntry().tabItem
+                { Text("Entry") }.tag(2)
+            HistoryView().tabItem
+                { Text("History") }.tag(1)
         }
     }
 }

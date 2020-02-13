@@ -18,7 +18,7 @@ extension Diaper {
     static func getAllDiaper()-> NSFetchRequest<Diaper>{
         let request: NSFetchRequest<Diaper> = Diaper.fetchRequest() as! NSFetchRequest<Diaper>
         
-        let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key: "date", ascending: false)
         
         request.sortDescriptors = [sortDescriptor]
         return request

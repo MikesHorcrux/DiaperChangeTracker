@@ -14,6 +14,7 @@ struct DiaperView: View {
     var date:Date
     
     var body: some View{
+        
         HStack{
             VStack(alignment: .leading){
                 Text("Dirty: \(dirty)")
