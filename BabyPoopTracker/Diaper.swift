@@ -9,15 +9,15 @@
 import Foundation
 import CoreData
 
-private class Diapers: NSManagedObject, Identifiable{
-    @NSManaged public var date: Date
+public class Diaper: NSManagedObject, Identifiable{
+    @NSManaged public var date: Date?
     @NSManaged public var wetDiaper: Int16
     @NSManaged public var dirtyDiaper: Int16
 }
-extension Diapers {
-    static func getAllDiaper() -> NSFetchRequest<Diapers>{
-        let request: NSFetchRequest<Diapers> = Diapers.fetchRequest() as!
-        NSFetchRequest<Diapers>
+extension Diaper {
+    static func getAllDiaper() -> NSFetchRequest<Diaper>{
+        let request: NSFetchRequest<Diaper> = Diaper.fetchRequest() as!
+        NSFetchRequest<Diaper>
         
         let sortDescriptor = NSSortDescriptor(key: "date", ascending: true)
         

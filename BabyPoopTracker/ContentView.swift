@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @FetchRequest(fetchRequest: Diaper.getAllDiaper())
+    var diaper:FetchedResults<Diaper>
+    
     var body: some View {
         Text("Hello, Mike this is a github tets")
     }
