@@ -15,6 +15,8 @@
 		A164AC6623EE6153005B9A33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A164AC6523EE6153005B9A33 /* Preview Assets.xcassets */; };
 		A164AC6923EE6153005B9A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A164AC6723EE6153005B9A33 /* LaunchScreen.storyboard */; };
 		A164AC7823EE70A3005B9A33 /* Diaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A164AC7723EE70A3005B9A33 /* Diaper.swift */; };
+		A1B9E20F23F513E9008B7A5A /* DiaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B9E20E23F513E9008B7A5A /* DiaperView.swift */; };
+		A1E85E2A23F4F62200A95216 /* DiaperEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E85E2923F4F62200A95216 /* DiaperEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A164AC6823EE6153005B9A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A164AC6A23EE6153005B9A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A164AC7723EE70A3005B9A33 /* Diaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaper.swift; sourceTree = "<group>"; };
+		A1B9E20E23F513E9008B7A5A /* DiaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaperView.swift; sourceTree = "<group>"; };
+		A1E85E2923F4F62200A95216 /* DiaperEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaperEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A164AC5923EE6152005B9A33 /* AppDelegate.swift */,
 				A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */,
 				A164AC6023EE6152005B9A33 /* ContentView.swift */,
+				A1B9E20E23F513E9008B7A5A /* DiaperView.swift */,
+				A1E85E2923F4F62200A95216 /* DiaperEntry.swift */,
 				A164AC7723EE70A3005B9A33 /* Diaper.swift */,
 				A164AC6223EE6153005B9A33 /* Assets.xcassets */,
 				A164AC6723EE6153005B9A33 /* LaunchScreen.storyboard */,
@@ -154,7 +160,9 @@
 			files = (
 				A150C45623EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld in Sources */,
 				A164AC7823EE70A3005B9A33 /* Diaper.swift in Sources */,
+				A1B9E20F23F513E9008B7A5A /* DiaperView.swift in Sources */,
 				A164AC5A23EE6152005B9A33 /* AppDelegate.swift in Sources */,
+				A1E85E2A23F4F62200A95216 /* DiaperEntry.swift in Sources */,
 				A164AC6123EE6152005B9A33 /* ContentView.swift in Sources */,
 				A164AC5C23EE6152005B9A33 /* SceneDelegate.swift in Sources */,
 			);
