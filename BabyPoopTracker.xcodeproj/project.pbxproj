@@ -47,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A134364D23FB446600229272 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A164AC7723EE70A3005B9A33 /* Diaper.swift */,
+				A150C45423EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A134364E23FB448D00229272 /* EntryViews */ = {
+			isa = PBXGroup;
+			children = (
+				A1E85E2923F4F62200A95216 /* DiaperEntry.swift */,
+			);
+			path = EntryViews;
+			sourceTree = "<group>";
+		};
+		A134364F23FB44B600229272 /* HistoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				A1B9E20E23F513E9008B7A5A /* DiaperView.swift */,
+				A1B9E21023F52A9C008B7A5A /* HistoryView.swift */,
+			);
+			path = HistoryViews;
+			sourceTree = "<group>";
+		};
 		A164AC4D23EE6152005B9A33 = {
 			isa = PBXGroup;
 			children = (
@@ -69,14 +95,12 @@
 				A164AC5923EE6152005B9A33 /* AppDelegate.swift */,
 				A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */,
 				A164AC6023EE6152005B9A33 /* ContentView.swift */,
-				A1B9E20E23F513E9008B7A5A /* DiaperView.swift */,
-				A1B9E21023F52A9C008B7A5A /* HistoryView.swift */,
-				A1E85E2923F4F62200A95216 /* DiaperEntry.swift */,
-				A164AC7723EE70A3005B9A33 /* Diaper.swift */,
+				A134364F23FB44B600229272 /* HistoryViews */,
+				A134364E23FB448D00229272 /* EntryViews */,
+				A134364D23FB446600229272 /* Model */,
 				A164AC6223EE6153005B9A33 /* Assets.xcassets */,
 				A164AC6723EE6153005B9A33 /* LaunchScreen.storyboard */,
 				A164AC6A23EE6153005B9A33 /* Info.plist */,
-				A150C45423EFDF56005D9D12 /* BabyPoopTracker.xcdatamodeld */,
 				A164AC6423EE6153005B9A33 /* Preview Content */,
 			);
 			path = BabyPoopTracker;

@@ -16,6 +16,7 @@ struct DiaperEntry: View {
     
     @State var newWetDiaper:Int = 0
     @State var newDirtyDiaper:Int = 0
+    @State var newDiapersChanged:Int = 0
     
     
     
@@ -35,10 +36,10 @@ struct DiaperEntry: View {
             
             Button(action: {
                 let diaper = Diaper(context: self.managedObjectContext)
+                diaper.diapersChanged = Int32(self.newDiapersChanged)
                 diaper.wetDiaper = Int32(self.newWetDiaper)
                 diaper.dirtyDiaper = Int32(self.newDirtyDiaper)
                 diaper.date = Date()
-                
                 
                 do{
                     try self.managedObjectContext.save()

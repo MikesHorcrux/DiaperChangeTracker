@@ -13,6 +13,7 @@ public class Diaper: NSManagedObject, Identifiable{
     @NSManaged public var date: Date
     @NSManaged public var wetDiaper: Int32
     @NSManaged public var dirtyDiaper: Int32
+    @NSManaged public var diapersChanged: Int32
 }
 extension Diaper {
     static func getAllDiaper()-> NSFetchRequest<Diaper>{

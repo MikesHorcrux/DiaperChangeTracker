@@ -18,8 +18,8 @@ struct HistoryView: View {
         List {
             ForEach(self.diaper){
                 diaper in
-                DiaperView(dirty: diaper.dirtyDiaper, wet: diaper.wetDiaper, date: diaper.date)
-            }
+                    DiaperView(dirty: diaper.dirtyDiaper, wet: diaper.wetDiaper, date: diaper.date)
+                    }
         }
     }
 }

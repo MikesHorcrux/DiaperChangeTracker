@@ -17,9 +17,20 @@ struct DiaperView: View {
         
         HStack{
             VStack(alignment: .leading){
-                Text("Dirty: \(dirty)")
-                Text("Wet: \(wet)")
-                Text("Date: \(date)")
+                if dirty == 1 && wet == 1 {
+                    Text("Dirty: \(dirty)")
+                    Text("Wet: \(wet)")
+                    Text("Date: \(date)")
+                }
+                else if dirty == 1 && wet == 0{
+                    Text("Dirty: \(dirty)")
+                    Text("Date: \(date)")
+                }
+                else{
+                    Text("Wet: \(wet)")
+                    Text("Date: \(date)")
+                }
+                
             }
         }
     }
