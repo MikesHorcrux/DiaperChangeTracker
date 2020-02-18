@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            Text("DashBoard").tabItem
+            DiaperChangeView().tabItem
                 { Text("Dash Board") }.tag(1)
             DiaperEntry().tabItem
                 { Text("Entry") }.tag(2)

@@ -24,13 +24,13 @@ struct DiaperView: View {
                         Spacer()
                         HStack{
                             VStack{
-                                Image("wetdiaper")
+                                Image("wetopendiaper")
                                     .resizable()
                                     .scaledToFit()
                                
                             }
                             VStack {
-                                Image("dirtydiaper")
+                                Image("Dirtyopendiaper")
                                     .resizable()
                                     .scaledToFit()
             
@@ -45,7 +45,7 @@ struct DiaperView: View {
                         Text("Date: \(date)")
                         Spacer()
                         VStack{
-                            Image("dirtydiaper")
+                            Image("Dirtyopendiaper")
                                 .resizable()
                                 .scaledToFit()
                             }
@@ -56,7 +56,7 @@ struct DiaperView: View {
                     Text("Date: \(date)")
                     Spacer()
                     VStack{
-                        Image("wetdiaper")
+                        Image("wetopendiaper")
                             .resizable()
                             .scaledToFit()
                         }
