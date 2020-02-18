@@ -9,26 +9,58 @@
 import SwiftUI
 
 struct DiaperView: View {
-    var dirty:Int32 = 0
-    var wet:Int32 = 0
+    var dirty:Int32 = 1
+    var wet:Int32 = 1
     var date:Date
+    
     
     var body: some View{
         
         HStack{
             VStack(alignment: .leading){
                 if dirty == 1 && wet == 1 {
-                    Text("Dirty: \(dirty)")
-                    Text("Wet: \(wet)")
-                    Text("Date: \(date)")
+                    HStack{
+                        Text("Date: \(date)")
+                        Spacer()
+                        HStack{
+                            VStack{
+                                Image("wetdiaper")
+                                    .resizable()
+                                    .scaledToFit()
+                               
+                            }
+                            VStack {
+                                Image("dirtydiaper")
+                                    .resizable()
+                                    .scaledToFit()
+            
+                            }
+                        }
+                        
+                    }.padding()
+                    
                 }
                 else if dirty == 1 && wet == 0{
-                    Text("Dirty: \(dirty)")
-                    Text("Date: \(date)")
+                    HStack{
+                        Text("Date: \(date)")
+                        Spacer()
+                        VStack{
+                            Image("dirtydiaper")
+                                .resizable()
+                                .scaledToFit()
+                            }
+                        }.padding()
                 }
                 else{
-                    Text("Wet: \(wet)")
+                    HStack{
                     Text("Date: \(date)")
+                    Spacer()
+                    VStack{
+                        Image("wetdiaper")
+                            .resizable()
+                            .scaledToFit()
+                        }
+                    }.padding()
                 }
                 
             }
