@@ -9,10 +9,6 @@
 import SwiftUI
 
 struct DiaperChangeView: View {
-    @Environment(\.managedObjectContext)
-    var managedObjectContext
-    @FetchRequest(fetchRequest: Diaper.getAllDiaper())
-    var diaper:FetchedResults<Diaper>
     
     @State var newWetDiaper:Int = 0
     @State var newDirtyDiaper:Int = 0
@@ -46,24 +42,7 @@ struct DiaperChangeView: View {
                 }.padding()
             }.padding()
            
-            Button(action: {
-                let diaper = Diaper(context: self.managedObjectContext)
-                diaper.diapersChanged = Int32(self.newDiapersChanged)
-                diaper.wetDiaper = Int32(self.newWetDiaper)
-                diaper.dirtyDiaper = Int32(self.newDirtyDiaper)
-                diaper.date = Date()
-                
-                do{
-                    try self.managedObjectContext.save()
-                }catch{
-                    print(error)
-                }
-                
-                self.newWetDiaper = 0
-                self.newDirtyDiaper = 0
-            }){
-            Text("Add")
-            }
+            AddButton()
         }
     }
 }
