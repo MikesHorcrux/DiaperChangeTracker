@@ -11,11 +11,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            DiaperChangeView().tabItem
+            DashboardView().tabItem
                 { Text("Dash Board") }.tag(1)
             DiaperEntry().tabItem
                 { Text("Entry") }.tag(2)
-            HistoryView().tabItem
+            Text("History").tabItem
                 { Text("History") }.tag(1)
         }
     }

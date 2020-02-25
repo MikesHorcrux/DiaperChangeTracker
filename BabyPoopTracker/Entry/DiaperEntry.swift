@@ -20,24 +20,32 @@ struct DiaperEntry: View {
         NavigationView {
            
            
-            VStack{
-                
-                    HStack{
-                        Button(action: {
-                            self.newDirtyDiaper = 1
-                        }) {
-                            DiaperChangeButtonView(diaperText: "Dirty Diaper", image: "Dirtyopendiaper")
-                        }.padding()
-                        Button(action: {
-                            self.newWetDiaper = 1
-                        }) {
-                            DiaperChangeButtonView(diaperText: "Wet Diaper", image: "wetopendiaper")
-                        }.padding()
-                    }
-                Spacer()
-                AddButton()
-
+        VStack {
+            VStack(alignment: .leading){
+                Text("Select Diaper Type: ")
+                    .fontWeight(.semibold)
+                        .multilineTextAlignment(.leading)
+                        
+                    
+                        HStack{
+                            Button(action: {
+                                self.newDirtyDiaper = 1
+                            }) {
+                                DiaperChangeButtonView(diaperText: "Dirty Diaper", image: "Dirtyopendiaper")
+                            }.padding()
+                            Button(action: {
+                                self.newWetDiaper = 1
+                            }) {
+                                DiaperChangeButtonView(diaperText: "Wet Diaper", image: "wetopendiaper")
+                            }.padding()
+                        }
             }
+            .padding()
+            .padding(.bottom, 80)
+            
+            AddButton()
+            Spacer()
+        }
         .navigationBarTitle("Diaper Change")
         }
         
