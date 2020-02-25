@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct DiaperView: View {
-    var dirty:Int32 = 1
-    var wet:Int32 = 1
+    var dirty:Int32 = 0
+    var wet:Int32 = 0
     var date:Date
     
     
