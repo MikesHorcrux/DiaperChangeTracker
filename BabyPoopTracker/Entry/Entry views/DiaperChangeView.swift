@@ -42,7 +42,7 @@ struct DiaperChangeView: View {
                 }.padding()
             }.padding()
            
-            AddButton()
+            
         }
     }
 }

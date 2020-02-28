@@ -25,6 +25,7 @@ struct AddButton: View {
             diaper.diapersChanged = Int32(self.newDiapersChanged)
             diaper.wetDiaper = Int32(self.newWetDiaper)
             diaper.dirtyDiaper = Int32(self.newDirtyDiaper)
+            diaper.diapersChanged = Int32(self.newDiapersChanged)
             diaper.date = Date()
             
             do{
@@ -35,6 +36,7 @@ struct AddButton: View {
             
             self.newWetDiaper = 0
             self.newDirtyDiaper = 0
+            self.newDiapersChanged = 0
         }){
             ZStack{
                 Capsule()

@@ -92,6 +92,8 @@
 		A164AC5823EE6152005B9A33 /* BabyPoopTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A134364F23FB44B600229272 /* HistoryViews */,
+				A1A9C9832409BC3100EA6ADB /* Cards */,
 				A164AC5923EE6152005B9A33 /* AppDelegate.swift */,
 				A164AC5B23EE6152005B9A33 /* SceneDelegate.swift */,
 				A164AC6023EE6152005B9A33 /* ContentView.swift */,
@@ -114,10 +116,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A1A9C9832409BC3100EA6ADB /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		A1DEC35A2405DF9A0022E96C /* Entry */ = {
 			isa = PBXGroup;
 			children = (
-				A134364F23FB44B600229272 /* HistoryViews */,
 				A1E85E2923F4F62200A95216 /* DiaperEntry.swift */,
 				A1DEC35B2405DFD30022E96C /* Entry views */,
 			);

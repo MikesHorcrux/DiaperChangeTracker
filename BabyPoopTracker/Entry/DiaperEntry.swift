@@ -13,7 +13,7 @@ struct DiaperEntry: View {
     @State var newWetDiaper:Int = 0
     @State var newDirtyDiaper:Int = 0
     @State var newDiapersChanged:Int = 0
-    
+
     
     
     var body: some View {
@@ -29,12 +29,14 @@ struct DiaperEntry: View {
                     
                         HStack{
                             Button(action: {
-                                self.newDirtyDiaper = 1
+                                self.newDirtyDiaper += 1
+                                self.newDiapersChanged += 1
                             }) {
                                 DiaperChangeButtonView(diaperText: "Dirty Diaper", image: "Dirtyopendiaper")
                             }.padding()
                             Button(action: {
-                                self.newWetDiaper = 1
+                                self.newWetDiaper += 1
+                                self.newDiapersChanged += 1
                             }) {
                                 DiaperChangeButtonView(diaperText: "Wet Diaper", image: "wetopendiaper")
                             }.padding()
@@ -42,6 +44,20 @@ struct DiaperEntry: View {
             }
             .padding()
             .padding(.bottom, 80)
+            
+            if newDiapersChanged >= 1 {
+                VStack{
+                Text("You changed \(newDiapersChanged) Diapers")
+                    if newDirtyDiaper >= 1 {
+                        Text("Dirty Diapers: \(newDirtyDiaper)")
+                    }
+                    if newWetDiaper >= 1 {
+                        Text("Wet Diapers: \(newWetDiaper)")
+                    }
+                    
+                }
+            }
+
             
             AddButton()
             Spacer()
