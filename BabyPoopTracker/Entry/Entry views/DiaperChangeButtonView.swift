@@ -13,15 +13,21 @@ struct DiaperChangeButtonView: View {
     @State var diaperText: String
     @State var image: String
     
+    
     var body: some View {
+        ZStack{
+            UnclickedCard()
             VStack{
                 Image(image)
                     .resizable()
                     .scaledToFit()
                 Text(diaperText)
                     .fontWeight(.semibold)
-                    .foregroundColor(.purple)
+                    .foregroundColor(Color("Text"))
             }
+        .padding()
+        }
+            
             
     }
 }

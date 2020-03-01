@@ -22,7 +22,6 @@ struct AddButton: View {
     var body: some View {
         Button(action: {
             let diaper = Diaper(context: self.managedObjectContext)
-            diaper.diapersChanged = Int32(self.newDiapersChanged)
             diaper.wetDiaper = Int32(self.newWetDiaper)
             diaper.dirtyDiaper = Int32(self.newDirtyDiaper)
             diaper.diapersChanged = Int32(self.newDiapersChanged)
